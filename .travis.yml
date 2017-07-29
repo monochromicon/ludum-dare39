@@ -8,6 +8,8 @@ cache:
     - "node_modules"
     - "dist"
 
+test: true
+
 before_deploy:
   - yarn build
   - rm -rf src

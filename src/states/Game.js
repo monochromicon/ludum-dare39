@@ -1,4 +1,3 @@
-/* globals __DEV__ */
 import Phaser from 'phaser'
 import Player from '../sprites/Player'
 import NPC from '../sprites/NPC'
@@ -26,8 +25,13 @@ export default class extends Phaser.State {
     this.game.add.existing(this.player)
 
     // Capture key inputs to prevent page scrolling
-    this.game.input.keyboard.addKeyCapture( [Phaser.KeyCode.SPACEBAR, Phaser.KeyCode.UP, Phaser.KeyCode.DOWN, Phaser.KeyCode.LEFT, Phaser.KeyCode.RIGHT] )
-
+    this.game.input.keyboard.addKeyCapture([
+      Phaser.KeyCode.SPACEBAR,
+      Phaser.KeyCode.UP,
+      Phaser.KeyCode.DOWN,
+      Phaser.KeyCode.LEFT,
+      Phaser.KeyCode.RIGHT
+    ])
   }
 
   render () {
