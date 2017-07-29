@@ -18,6 +18,7 @@ before_deploy:
   - mv dist public
   - mv assets public
   - mv index.html public
+  - mv .nojekyll public
 
 deploy:
   provider: script
