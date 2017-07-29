@@ -1,34 +1,48 @@
 /* globals __DEV__ */
 import Phaser from 'phaser'
-import Mushroom from '../sprites/Mushroom'
+import Player from '../sprites/Player'
+// import Mushroom from '../sprites/Mushroom'
 
 export default class extends Phaser.State {
   init () {}
   preload () {}
 
   create () {
-    const bannerText = 'Phaser + ES6 + Webpack'
-    let banner = this.add.text(this.world.centerX, this.game.height - 80, bannerText)
-    banner.font = 'Bangers'
-    banner.padding.set(10, 16)
-    banner.fontSize = 40
-    banner.fill = '#77BFA3'
-    banner.smoothed = false
-    banner.anchor.setTo(0.5)
+    // const bannerText = 'Phaser + ES6 + Webpack'
+    // let banner = this.add.text(this.world.centerX, this.game.height - 80, bannerText)
+    // banner.font = 'Bangers'
+    // banner.padding.set(10, 16)
+    // banner.fontSize = 40
+    // banner.fill = '#77BFA3'
+    // banner.smoothed = false
+    // banner.anchor.setTo(0.5)
 
-    this.mushroom = new Mushroom({
+    // this.mushroom = new Mushroom({
+    //   game: this.game,
+    //   x: this.world.centerX,
+    //   y: this.world.centerY,
+    //   asset: 'mushroom'
+    // })
+
+    // this.game.add.existing(this.mushroom)
+
+    this.player = new Player({
       game: this.game,
-      x: this.world.centerX,
-      y: this.world.centerY,
-      asset: 'mushroom'
+      x: 100,
+      y: 500,
+      asset: 'player'
     })
 
-    this.game.add.existing(this.mushroom)
+    this.game.add.existing(this.player)
+
+    // key mapping here
+    this.game.input.keyboard.addKeyCapture( [Phaser.KeyCode.SPACEBAR, Phaser.KeyCode.UP, Phaser.KeyCode.DOWN, Phaser.KeyCode.LEFT, Phaser.KeyCode.RIGHT] )
+
   }
 
   render () {
-    if (__DEV__) {
-      this.game.debug.spriteInfo(this.mushroom, 32, 32)
-    }
+    // if (__DEV__) {
+    //   this.game.debug.spriteInfo(this.mushroom, 32, 32)
+    // }
   }
 }
