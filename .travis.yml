@@ -6,13 +6,13 @@ install: yarn
 cache:
   directories:
     - "node_modules"
+    - "dist"
 
 script: yarn deploy
 
 before_deploy:
   - rm -rf src
   - rm webpack.production.config.js webpack.config.js yarn.lock .eslintrc.json .babelrc
-  # - mv dist/* .
 
 deploy:
   provider: pages
