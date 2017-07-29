@@ -1,8 +1,13 @@
 {
-  "name": "PhaserES6Webpack",
+  "name": "when-it-counts",
   "version": "1.0.0",
   "description": "",
-  "author": "leandro cabrera <leandcabrera@gmail.com>",
+  "author": "Graham Barber <grahammbarber@gmail.com>",
+  "contributors": [
+    "Benjamin Arvey <404bennotfound@gmail.com>",
+    "Jacob Payne",
+    "Mackenzie Coine"
+  ],
   "main": "index.js",
   "scripts": {
     "dev": "webpack",
