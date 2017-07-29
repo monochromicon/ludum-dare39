@@ -22,11 +22,11 @@ export default class extends Phaser.Sprite {
     }
     if (left && !right) {
       this.x -= this.speed
-      this.scale.setTo(-1, 1);
+      this.scale.setTo(-1, 1)
     }
     if (right && !left) {
       this.x += this.speed
-      this.scale.setTo(1, 1);
+      this.scale.setTo(1, 1)
     }
   }
 }
