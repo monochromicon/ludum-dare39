@@ -12,7 +12,7 @@
   "scripts": {
     "dev": "webpack",
     "build": "webpack --config webpack.production.config.js",
-    "test": "eslint ./src/**/**.js",
+    "lint": "eslint ./src/**/**.js",
     "deploy": "deploy-to-gh-pages public"
   },
   "license": "MIT",
