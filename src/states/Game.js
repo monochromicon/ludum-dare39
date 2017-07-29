@@ -1,6 +1,7 @@
 /* globals __DEV__ */
 import Phaser from 'phaser'
 import Player from '../sprites/Player'
+import NPC from '../sprites/NPC'
 // import Mushroom from '../sprites/Mushroom'
 
 export default class extends Phaser.State {
@@ -8,18 +9,13 @@ export default class extends Phaser.State {
   preload () {}
 
   create () {
-    const bannerText = 'When It Counts'
-    let banner = this.add.text(
-      this.world.centerX,
-      this.game.height - 80,
-      bannerText
-    )
-    banner.font = 'Bangers'
-    banner.padding.set(10, 16)
-    banner.fontSize = 40
-    banner.fill = '#77BFA3'
-    banner.smoothed = false
-    banner.anchor.setTo(0.5)
+    // Populate world
+    this.game.add.existing(new NPC({
+      game: this.game,
+      x: 800,
+      y: 500,
+      asset: 'npc1'
+    }))
 
     this.player = new Player({
       game: this.game,
@@ -27,10 +23,9 @@ export default class extends Phaser.State {
       y: 500,
       asset: 'player'
     })
-
     this.game.add.existing(this.player)
 
-    // key mapping here
+    // Capture key inputs to prevent page scrolling
     this.game.input.keyboard.addKeyCapture( [Phaser.KeyCode.SPACEBAR, Phaser.KeyCode.UP, Phaser.KeyCode.DOWN, Phaser.KeyCode.LEFT, Phaser.KeyCode.RIGHT] )
 
   }
