@@ -1,0 +1,27 @@
+language: node_js
+node_js:
+  - "node"
+
+install: yarn
+cache:
+  directories:
+    - "node_modules"
+    - "dist"
+
+before_deploy:
+  - yarn build
+  - rm -rf src
+  - rm webpack.production.config.js webpack.config.js yarn.lock .eslintrc.json .babelrc
+  - mkdir public
+  - mv dist public
+  - mv assets public
+  - mv index.html public
+
+deploy:
+  provider: script
+  script:
+    - yarn deploy
+  skip_cleanup: true
+  # github_token: $GITHUB_TOKEN
+  on:
+    branch: master
