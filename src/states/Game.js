@@ -25,21 +25,20 @@ export default class extends Phaser.State {
         asset: 'npc1',
         name: 'Caldwell',
         mandatory: true
-      }),
+      })
     ]
 
-    for (let i = 0; i < this.game.npcs.length; i++)
-      {
+    for (let i = 0; i < this.game.npcs.length; i++) {
       this.game.add.existing(this.game.npcs[i])
-      }
+    }
 
-    this.player = new Player({
+    this.game.player = new Player({
       game: this.game,
       x: 100,
       y: 540,
       asset: 'player'
     })
-    this.game.add.existing(this.player)
+    this.game.add.existing(this.game.player)
 
     // Capture key inputs to prevent page scrolling
     this.game.input.keyboard.addKeyCapture([

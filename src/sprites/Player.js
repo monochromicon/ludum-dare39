@@ -10,7 +10,7 @@ export default class extends Phaser.Sprite {
     this.nextTo = false
   }
 
-  interact(npc) {
+  interact (npc) {
     // Talk
     console.log(npc.name)
   }

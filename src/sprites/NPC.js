@@ -13,5 +13,11 @@ export default class extends Phaser.Sprite {
     // Talk
   }
 
-  update () {}
+  update () {
+    if (this.game.player.x <= this.x) {
+      this.scale.setTo(-1, 1)
+    } else {
+      this.scale.setTo(1, 1)
+    }
+  }
 }
