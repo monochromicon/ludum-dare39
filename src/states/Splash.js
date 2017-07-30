@@ -38,11 +38,17 @@ export default class extends Phaser.State {
     //
     // this.load.image('mushroom', 'assets/images/mushroom2.png')
     this.load.image('player', 'assets/images/player.png')
-    this.load.image('npc1', 'assets/images/npc1.png')
+    this.load.spritesheet('playerwalk', 'assets/images/playerwalk.png', 128, 256)
+    this.load.image('npc1', 'assets/images/caldwell.png')
+    this.load.image('lily', 'assets/images/lily.png')
+    this.load.image('finn', 'assets/images/finn.png')
+    this.load.image('amelia', 'assets/images/amelia.png')
     this.load.image('ground', 'assets/images/ground.png')
     this.load.image('shroud', 'assets/images/shroud.png')
     this.load.image('orb', 'assets/images/orb.png')
     this.load.image('textbox', 'assets/images/textbox.png')
+    this.load.image('exclamation', 'assets/images/exclamation.png')
+    this.load.image('sky', 'assets/images/sky.png')
   }
 
   create () {

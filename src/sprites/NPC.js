@@ -7,6 +7,7 @@ export default class extends Phaser.Sprite {
     this.dialogTree = 0 // TODO
     this.mandatory = mandatory
     this.name = name
+    this.talked = false
   }
 
   interact () {
@@ -14,10 +15,10 @@ export default class extends Phaser.Sprite {
   }
 
   update () {
-    if (this.game.player.x <= this.x) {
-      this.scale.setTo(-1, 1)
-    } else {
-      this.scale.setTo(1, 1)
-    }
+    // if (this.game.player.x <= this.x) {
+    //   this.scale.setTo(-1, 1)
+    // } else {
+    //   this.scale.setTo(1, 1)
+    // }
   }
 }

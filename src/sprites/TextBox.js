@@ -20,10 +20,20 @@ export default class extends Phaser.Sprite {
       this.inputEnabled = true
       this.useHandCursor = true
       this.events.onInputDown.add(this.textClicked, this)
+      this.events.onInputOver.add(this.textHover, this)
+      this.events.onInputOut.add(this.textUnhover, this)
     }
   }
 
   textClicked () {
     this.game.convo.respond(this.i)
+  }
+
+  textHover () {
+    this.tint = 0xAAAAAA
+  }
+
+  textUnhover () {
+    this.tint = 0xFFFFFF
   }
 }

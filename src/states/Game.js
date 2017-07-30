@@ -16,6 +16,7 @@ export default class extends Phaser.State {
     this.game.paused = false
 
     // Populate world
+    this.game.sky = this.game.add.sprite(0, 0, 'sky')
     for (let i = 0; i <= this.game.gameWidth + 256; i += 256) {
       this.game.add.sprite(i, 600 - 128, 'ground')
     }
@@ -23,12 +24,36 @@ export default class extends Phaser.State {
     this.game.npcs = [
       new NPC({
         game: this.game,
-        x: 800,
+        x: 500,
         y: 500,
         asset: 'npc1',
         name: 'Caldwell',
+        mandatory: false
+      }),
+      new NPC({
+        game: this.game,
+        x: 1000,
+        y: 500,
+        asset: 'finn',
+        name: 'Caldwell',
         mandatory: true
-      })
+      }),
+      new NPC({
+        game: this.game,
+        x: 1400,
+        y: 500,
+        asset: 'lily',
+        name: 'Caldwell',
+        mandatory: true
+      }),
+      new NPC({
+        game: this.game,
+        x: 1800,
+        y: 500,
+        asset: 'amelia',
+        name: 'Caldwell',
+        mandatory: true
+      }),
     ]
 
     for (let i = 0; i < this.game.npcs.length; i++) {
@@ -39,7 +64,7 @@ export default class extends Phaser.State {
       game: this.game,
       x: 100,
       y: 540,
-      asset: 'player'
+      asset: 'playerwalk'
     })
     this.game.add.existing(this.game.player)
 
