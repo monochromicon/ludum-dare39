@@ -20,8 +20,16 @@ export default class extends Phaser.State {
     banner.anchor.setTo(0.5)
 
     // Loading Bar
-    this.loaderBg = this.add.sprite(this.game.world.centerX, this.game.world.centerY, 'loaderBg')
-    this.loaderBar = this.add.sprite(this.game.world.centerX, this.game.world.centerY, 'loaderBar')
+    this.loaderBg = this.add.sprite(
+      this.game.world.centerX,
+      this.game.world.centerY,
+      'loaderBg'
+    )
+    this.loaderBar = this.add.sprite(
+      this.game.world.centerX,
+      this.game.world.centerY,
+      'loaderBar'
+    )
     centerGameObjects([this.loaderBg, this.loaderBar])
     this.load.setPreloadSprite(this.loaderBar)
 

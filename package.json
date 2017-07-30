@@ -12,7 +12,8 @@
   "scripts": {
     "dev": "webpack",
     "build": "webpack --config webpack.production.config.js",
-    "lint": "eslint ./src/**/**.js",
+    "precommit": "npm run lint",
+    "lint": "prettier-standard ./src/**/**.js",
     "deploy": "deploy-to-gh-pages public"
   },
   "license": "MIT",
@@ -32,6 +33,8 @@
     "eslint-plugin-promise": "^3.5.0",
     "eslint-plugin-standard": "^3.0.1",
     "expose-loader": "^0.7.3",
+    "husky": "^0.14.3",
+    "prettier-standard": "^6.0.0",
     "webpack": "^2.6.1"
   },
   "dependencies": {
