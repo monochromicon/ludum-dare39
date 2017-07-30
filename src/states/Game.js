@@ -32,6 +32,10 @@ export default class extends Phaser.State {
       Phaser.KeyCode.LEFT,
       Phaser.KeyCode.RIGHT
     ])
+
+    // Stage boundaries
+    this.game.gameWidth = 2000
+    this.game.world.setBounds(0, 0, this.game.gameWidth, 800)
   }
 
   render () {
