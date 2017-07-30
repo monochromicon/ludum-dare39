@@ -28,7 +28,7 @@ export default class extends Phaser.State {
         y: 500,
         asset: 'npc1',
         name: 'Caldwell',
-        mandatory: false
+        mandatory: true
       }),
       new NPC({
         game: this.game,
@@ -36,7 +36,7 @@ export default class extends Phaser.State {
         y: 500,
         asset: 'finn',
         name: 'Caldwell',
-        mandatory: true
+        mandatory: false
       }),
       new NPC({
         game: this.game,
@@ -44,7 +44,7 @@ export default class extends Phaser.State {
         y: 500,
         asset: 'lily',
         name: 'Caldwell',
-        mandatory: true
+        mandatory: false
       }),
       new NPC({
         game: this.game,
@@ -52,7 +52,7 @@ export default class extends Phaser.State {
         y: 500,
         asset: 'amelia',
         name: 'Caldwell',
-        mandatory: true
+        mandatory: false
       })
     ]
 

@@ -6,7 +6,7 @@ export const centerGameObjects = objects => {
   })
 }
 
-export const dialogue = function* (name) {
+export const dialogue = function * (name) {
   const character = characters[name]
   let currentNode = 0
 
