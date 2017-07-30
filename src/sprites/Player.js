@@ -14,6 +14,7 @@ export default class extends Phaser.Sprite {
     // Talk
     console.log(npc.name)
     this.game.paused = true
+    this.game.convo.startConvo(npc.name)
   }
 
   update () {
@@ -37,6 +38,7 @@ export default class extends Phaser.Sprite {
       this.scale.setTo(1, 1)
     }
     this.game.camera.x = this.x - 400
+    this.game.convo.x = this.game.camera.x
 
     // Check NPCS
     for (let i = 0; i < this.game.npcs.length; i++) {
@@ -47,7 +49,7 @@ export default class extends Phaser.Sprite {
       }
     }
     if (this.nextTo) {
-      if (space || this.nextTo.mandatory) {
+      if ( /* space || */ this.nextTo.mandatory) {
         this.interact(this.nextTo)
         this.nextTo.mandatory = false
       }

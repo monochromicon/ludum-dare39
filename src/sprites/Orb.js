@@ -7,7 +7,5 @@ export default class extends Phaser.Sprite {
     this.level = 100
   }
 
-  update () {
-    
-  }
+  update () {}
 }
