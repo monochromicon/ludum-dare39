@@ -1,7 +1,7 @@
 import Phaser from 'phaser'
 
 export default class extends Phaser.Sprite {
-  constructor ({ game, x, y, asset, name, mandatory }) {
+  constructor({ game, x, y, asset, name, mandatory }) {
     super(game, x, y, asset)
     this.anchor.setTo(0.5, 1.0)
     this.dialogTree = 0 // TODO
@@ -10,11 +10,11 @@ export default class extends Phaser.Sprite {
     this.talked = false
   }
 
-  interact () {
+  interact() {
     // Talk
   }
 
-  update () {
+  update() {
     // if (this.game.player.x <= this.x) {
     //   this.scale.setTo(-1, 1)
     // } else {

@@ -5,10 +5,10 @@ import Dialog from '../sprites/Dialog'
 // import Mushroom from '../sprites/Mushroom'
 
 export default class extends Phaser.State {
-  init () {}
-  preload () {}
+  init() { }
+  preload() { }
 
-  create () {
+  create() {
     // Stage boundaries
     this.game.gameWidth = 2000
     this.game.world.setBounds(0, 0, this.game.gameWidth, 800)
@@ -86,7 +86,7 @@ export default class extends Phaser.State {
     ])
   }
 
-  render () {
+  render() {
     // if (__DEV__) {
     //   this.game.debug.spriteInfo(this.mushroom, 32, 32)
     // }

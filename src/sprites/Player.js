@@ -2,7 +2,7 @@
 import Phaser from 'phaser'
 
 export default class extends Phaser.Sprite {
-  constructor ({ game, x, y, asset }) {
+  constructor({ game, x, y, asset }) {
     super(game, x, y, asset)
     this.anchor.setTo(0.5, 1.0)
     this.inputEnabled = true
@@ -16,7 +16,7 @@ export default class extends Phaser.Sprite {
     this.frame = 1
   }
 
-  interact (npc) {
+  interact(npc) {
     // Talk
     this.game.paused = true
     npc.talked = true
@@ -24,7 +24,7 @@ export default class extends Phaser.Sprite {
     this.game.convo.startConvo(npc.name)
   }
 
-  update () {
+  update() {
     var left = this.game.input.keyboard.isDown(Phaser.KeyCode.LEFT)
     var right = this.game.input.keyboard.isDown(Phaser.KeyCode.RIGHT)
     var space = this.game.input.keyboard.isDown(Phaser.KeyCode.SPACEBAR)

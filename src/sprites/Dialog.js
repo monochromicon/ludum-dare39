@@ -4,7 +4,7 @@ import TextBox from '../sprites/TextBox'
 import { dialogue } from '../utils'
 
 export default class extends Phaser.Sprite {
-  constructor ({ game, x, y }) {
+  constructor({ game, x, y }) {
     super(game, x, y, 'shroud')
     this.textBoxes = []
     this.otherBox = null
@@ -21,14 +21,14 @@ export default class extends Phaser.Sprite {
     this.visible = false
   }
 
-  startConvo (name) {
+  startConvo(name) {
     this.visible = true
     this.dialogTree = dialogue(name)
     this.currNode = this.dialogTree.next()
     this.display(this.currNode.value, 0)
   }
 
-  respond (index) {
+  respond(index) {
     if (this.orb.drain(1)) {
       this.currNode = this.dialogTree.next(index)
       if (this.currNode.done) {
@@ -43,7 +43,7 @@ export default class extends Phaser.Sprite {
     }
   }
 
-  display (value, index) {
+  display(value, index) {
     if (!Array.isArray(value.line)) {
       value.line = [value.line]
     }
@@ -59,7 +59,7 @@ export default class extends Phaser.Sprite {
     }
   }
 
-  setPlayerText (text) {
+  setPlayerText(text) {
     // out with the old
     if (this.textBoxes) {
       for (let i = 0; i < this.textBoxes.length; i++) {
@@ -81,7 +81,7 @@ export default class extends Phaser.Sprite {
     }
   }
 
-  setOtherText (text) {
+  setOtherText(text) {
     // out with the old
     if (this.otherBox) {
       this.removeChild(this.otherBox)
@@ -99,5 +99,5 @@ export default class extends Phaser.Sprite {
     this.addChild(this.otherBox)
   }
 
-  update () {}
+  update() { }
 }

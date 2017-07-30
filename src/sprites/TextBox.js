@@ -1,7 +1,7 @@
 import Phaser from 'phaser'
 
 export default class extends Phaser.Sprite {
-  constructor ({ game, x, y, text, style, i }) {
+  constructor({ game, x, y, text, style, i }) {
     super(game, x, y, 'textbox')
     this.game = game
     // this.text = new Text({
@@ -25,15 +25,15 @@ export default class extends Phaser.Sprite {
     }
   }
 
-  textClicked () {
+  textClicked() {
     this.game.convo.respond(this.i)
   }
 
-  textHover () {
+  textHover() {
     this.tint = 0xaaaaaa
   }
 
-  textUnhover () {
+  textUnhover() {
     this.tint = 0xffffff
   }
 }

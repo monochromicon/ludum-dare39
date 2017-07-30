@@ -2,9 +2,9 @@ import Phaser from 'phaser'
 import { centerGameObjects } from '../utils'
 
 export default class extends Phaser.State {
-  init () {}
+  init() { }
 
-  preload () {
+  preload() {
     // Banner
     const bannerText = 'When It Counts'
     let banner = this.add.text(
@@ -56,7 +56,7 @@ export default class extends Phaser.State {
     this.load.image('sky', 'assets/images/sky.png')
   }
 
-  create () {
+  create() {
     this.state.start('Game')
   }
 }
