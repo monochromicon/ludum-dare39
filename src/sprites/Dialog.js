@@ -8,8 +8,13 @@ export default class extends Phaser.Sprite {
     super(game, x, y, 'shroud')
     this.textBoxes = []
     this.otherBox = null
-    this.style = { font: '12pt Arial', fill: "#ffffff", wordWrap: true, wordWrapWidth: 276 }
-    this.orb = new Orb({game: game, x: 400, y: 600})
+    this.style = {
+      font: '12pt Arial',
+      fill: '#ffffff',
+      wordWrap: true,
+      wordWrapWidth: 276
+    }
+    this.orb = new Orb({ game: game, x: 400, y: 600 })
     this.addChild(this.orb)
     this.dialogTree = null
     this.currNode = null

@@ -47,7 +47,8 @@ export default class extends Phaser.State {
     this.game.convo = new Dialog({
       game: this.game,
       x: 0,
-      y: 0})
+      y: 0
+    })
     this.game.add.existing(this.game.convo)
 
     // Capture key inputs to prevent page scrolling

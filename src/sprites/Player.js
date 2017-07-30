@@ -49,7 +49,7 @@ export default class extends Phaser.Sprite {
       }
     }
     if (this.nextTo) {
-      if ( /* space || */ this.nextTo.mandatory) {
+      if (/* space || */ this.nextTo.mandatory) {
         this.interact(this.nextTo)
         this.nextTo.mandatory = false
       }
