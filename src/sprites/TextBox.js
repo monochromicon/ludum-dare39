@@ -12,7 +12,7 @@ export default class extends Phaser.Sprite {
     //   style:style
     // })
     this.i = i
-    this.text = this.game.add.text(12, 12, text, style)
+    this.text = this.game.add.text(12, 10, text, style)
     this.addChild(this.text)
 
     // negative index used for noninteractable box

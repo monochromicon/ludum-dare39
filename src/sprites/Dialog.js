@@ -14,7 +14,7 @@ export default class extends Phaser.Sprite {
       wordWrap: true,
       wordWrapWidth: 276
     }
-    this.orb = new Orb({ game: game, x: 400, y: 600 })
+    this.orb = new Orb({ game: game, x: 54, y: 600 })
     this.addChild(this.orb)
     this.dialogTree = null
     this.currNode = null
