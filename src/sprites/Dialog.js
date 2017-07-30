@@ -25,23 +25,38 @@ export default class extends Phaser.Sprite {
     this.visible = true
     this.dialogTree = dialogue(name)
     this.currNode = this.dialogTree.next()
-    this.display(this.currNode.value)
+    this.display(this.currNode.value, 0)
   }
 
   respond (index) {
-    this.currNode = this.dialogTree.next(index)
-    if (this.currNode.done) {
-      this.visible = false
-      this.dialogTree = null
-      this.game.paused = false
+    if (this.orb.drain(1)) {
+      this.currNode = this.dialogTree.next(index)
+      if (this.currNode.done) {
+        this.visible = false
+        this.dialogTree = null
+        this.game.paused = false
+      } else {
+        this.display(this.currNode.value, 0)
+      }
     } else {
-      this.display(this.currNode.value)
+      // TODO: you are dead
     }
   }
 
-  display (value) {
-    this.setOtherText(this.currNode.value.line)
-    this.setPlayerText(this.currNode.value.choices)
+  display (value, index) {
+    if (!Array.isArray(value.line)) {
+      value.line = [value.line]
+    }
+    if (index < value.line.length) {
+      this.setOtherText(value.line[index])
+      this.setPlayerText([])
+      setTimeout(() => {
+        this.display(value, index + 1)
+      }, 1700)
+    } else {
+      this.setOtherText(value.line[index - 1])
+      this.setPlayerText(value.choices)
+    }
   }
 
   setPlayerText (text) {
