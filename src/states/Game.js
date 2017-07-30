@@ -1,6 +1,9 @@
 import Phaser from 'phaser'
 import Player from '../sprites/Player'
 import NPC from '../sprites/NPC'
+import Orb from '../sprites/Orb'
+import Dialog from '../sprites/Dialog'
+import TextBox from '../sprites/TextBox'
 // import Mushroom from '../sprites/Mushroom'
 
 export default class extends Phaser.State {
@@ -11,6 +14,8 @@ export default class extends Phaser.State {
     // Stage boundaries
     this.game.gameWidth = 2000
     this.game.world.setBounds(0, 0, this.game.gameWidth, 800)
+
+    this.game.paused = false
 
     // Populate world
     for (let i = 0; i <= this.game.gameWidth + 256; i += 256) {
@@ -39,6 +44,13 @@ export default class extends Phaser.State {
       asset: 'player'
     })
     this.game.add.existing(this.game.player)
+
+    // Conversation mode objects
+
+    this.game.convo = this.game.add.sprite(0, 0, 'shroud')
+    this.game.convo.orb = this.game.convo.addChild(new Orb(this.game, 400, 600))
+    this.game.convo.yourDialog = this.game.convo.addChild(new Dialog(this.game, 50, 50))
+    this.game.convo.theirDialog = this.game.convo.addChild(new Dialog(this.game, 550, 50))
 
     // Capture key inputs to prevent page scrolling
     this.game.input.keyboard.addKeyCapture([

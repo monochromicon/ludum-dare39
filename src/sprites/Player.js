@@ -13,6 +13,7 @@ export default class extends Phaser.Sprite {
   interact (npc) {
     // Talk
     console.log(npc.name)
+    this.game.paused = true
   }
 
   update () {
@@ -20,6 +21,11 @@ export default class extends Phaser.Sprite {
     var right = this.game.input.keyboard.isDown(Phaser.KeyCode.RIGHT)
     var space = this.game.input.keyboard.isDown(Phaser.KeyCode.SPACEBAR)
     var bounds = this.game.world.getBounds()
+
+    // Abort if paused
+    if (this.game.paused) {
+      return
+    }
 
     // Move
     if (left && !right && this.x > 64) {
