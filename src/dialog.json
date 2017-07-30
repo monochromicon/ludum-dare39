@@ -24,7 +24,7 @@
     },
     {
       "id": 1,
-      "line": "There was a time when it was quite frightening for us. But we're a strong group, we got through.",
+      "line": ["There was a time when it was quite frightening for us. But we're a strong group, we got through."],
       "responses": [
         {
           "quip": "Strong? Ha! Stubborn more like.",
@@ -55,7 +55,7 @@
     },
     {
       "id": 3,
-      "line": "Your mother? She doesn't leave home very often nowadays, I bet she's there now. Is everything alright?",
+      "line": ["Your mother? She doesn't leave home very often nowadays, I bet she's there now. Is everything alright?"],
       "responses": [
         {
           "quip": "Of course, I just want to see her most of all.",
@@ -112,7 +112,7 @@
     },
     {
       "id": 7,
-      "line": "Ah, that would make sense. I'll let you get to that then. It's nice to see you home.",
+      "line": ["Ah, that would make sense. I'll let you get to that then. It's nice to see you home."],
       "responses": [
         {
           "quip": "It's nice to see you too, Caldwell. Goodbye.",
@@ -122,7 +122,7 @@
     },
     {
       "id": 8,
-      "line": "She doesn't leave home too often nowadays. I bet she's there now.",
+      "line": ["She doesn't leave home too often nowadays. I bet she's there now."],
       "responses": [
         {
           "quip": "Thanks Caldwell, I'll talk with you later.",
@@ -136,7 +136,7 @@
     },
     {
       "id": 9,
-      "line": "That's very kind of you but I should probably get back to work. Besides, I know the other townsfolk would be thrilled to talk with you as well. We can talk some more later.",
+      "line": ["That's very kind of you but I should probably get back to work. Besides, I know the other townsfolk would be thrilled to talk with you as well. We can talk some more later."],
       "responses": [
         {
           "quip": "I'll hold you to that. Goodbye, Caldwell.",
@@ -146,7 +146,7 @@
     },
     {
       "id": 10,
-      "line": "Ah, you should find her at home then. It's nice to see you well Hiro.",
+      "line": ["Ah, you should find her at home then. It's nice to see you well Hiro."],
       "responses": [
         {
           "quip": "Thanks for your help. Nice seeing you too.",
