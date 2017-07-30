@@ -17,12 +17,21 @@ export default class extends Phaser.State {
       this.game.add.sprite(i, 600 - 128, 'ground')
     }
 
-    this.game.add.existing(new NPC({
-      game: this.game,
-      x: 800,
-      y: 500,
-      asset: 'npc1'
-    }))
+    this.game.npcs = [
+      new NPC({
+        game: this.game,
+        x: 800,
+        y: 500,
+        asset: 'npc1',
+        name: 'Caldwell',
+        mandatory: true
+      }),
+    ]
+
+    for (let i = 0; i < this.game.npcs.length; i++)
+      {
+      this.game.add.existing(this.game.npcs[i])
+      }
 
     this.player = new Player({
       game: this.game,
