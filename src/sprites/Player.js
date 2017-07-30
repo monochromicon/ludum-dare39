@@ -6,9 +6,10 @@ export default class extends Phaser.Sprite {
     super(game, x, y, asset)
     this.anchor.setTo(0.5, 1.0)
     this.inputEnabled = true
+    this.speed = 3
   }
 
-  interact () {
+  interact() {
     // Talk
   }
 
@@ -20,10 +21,12 @@ export default class extends Phaser.Sprite {
       this.interact()
     }
     if (left && !right) {
-      this.x -= 4
+      this.x -= this.speed
+      this.scale.setTo(-1, 1)
     }
     if (right && !left) {
-      this.x += 4
+      this.x += this.speed
+      this.scale.setTo(1, 1)
     }
   }
 }
