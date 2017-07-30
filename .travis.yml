@@ -15,7 +15,7 @@ before_deploy:
   - rm -rf src
   - rm webpack.production.config.js webpack.config.js yarn.lock .eslintrc.json .babelrc
   - mkdir public
-  - mv dist public
+  - mv ludum-dare39/dist public
   - mv assets public
   - mv index.html public
   - mv .nojekyll public
