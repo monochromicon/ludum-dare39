@@ -12,7 +12,7 @@ export default class extends Phaser.Sprite {
     this.addChild(this.exclamation)
     this.exclamation.anchor.setTo(0.5, 0.5)
     this.exclamation.visible = false
-    this.animations.add('walk', [0, 1, 2, 3, 4, 5, 6], 8, true)
+    this.animations.add('walk', [1, 2, 3, 4, 5, 6, 0], 8, true)
     this.frame = 1
   }
 
@@ -61,7 +61,7 @@ export default class extends Phaser.Sprite {
     }
     this.exclamation.visible = !!this.nextTo
     if (this.nextTo) {
-      if ( space || this.nextTo.mandatory) {
+      if (space || this.nextTo.mandatory) {
         this.interact(this.nextTo)
         this.nextTo.mandatory = false
       }

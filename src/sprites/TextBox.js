@@ -30,10 +30,10 @@ export default class extends Phaser.Sprite {
   }
 
   textHover () {
-    this.tint = 0xAAAAAA
+    this.tint = 0xaaaaaa
   }
 
   textUnhover () {
-    this.tint = 0xFFFFFF
+    this.tint = 0xffffff
   }
 }

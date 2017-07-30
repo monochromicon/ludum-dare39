@@ -53,7 +53,7 @@ export default class extends Phaser.State {
         asset: 'amelia',
         name: 'Caldwell',
         mandatory: true
-      }),
+      })
     ]
 
     for (let i = 0; i < this.game.npcs.length; i++) {
