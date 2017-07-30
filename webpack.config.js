@@ -14,23 +14,23 @@ var definePlugin = new webpack.DefinePlugin({
 
 module.exports = {
   entry: {
-    app: [
-      'babel-polyfill',
-      path.resolve(__dirname, 'src/main.js')
-    ],
+    app: ['babel-polyfill', path.resolve(__dirname, 'src/main.js')],
     vendor: ['pixi', 'p2', 'phaser', 'webfontloader']
   },
   devtool: 'cheap-source-map',
   output: {
     pathinfo: true,
-    path: path.resolve(__dirname, 'dist'),
-    publicPath: './dist/',
+    path: path.resolve(__dirname, 'ludum-dare39', 'dist'),
+    publicPath: './ludum-dare39/dist/',
     filename: 'bundle.js'
   },
   watch: true,
   plugins: [
     definePlugin,
-    new webpack.optimize.CommonsChunkPlugin({ name: 'vendor'/* chunkName= */, filename: 'vendor.bundle.js'/* filename= */}),
+    new webpack.optimize.CommonsChunkPlugin({
+      name: 'vendor' /* chunkName= */,
+      filename: 'vendor.bundle.js' /* filename= */
+    }),
     new BrowserSyncPlugin({
       host: process.env.IP || 'localhost',
       port: process.env.PORT || 3000,
@@ -41,7 +41,11 @@ module.exports = {
   ],
   module: {
     rules: [
-      { test: /\.js$/, use: ['babel-loader'], include: path.join(__dirname, 'src') },
+      {
+        test: /\.js$/,
+        use: ['babel-loader'],
+        include: path.join(__dirname, 'src')
+      },
       { test: /pixi\.js/, use: ['expose-loader?PIXI'] },
       { test: /phaser-split\.js$/, use: ['expose-loader?Phaser'] },
       { test: /p2\.js/, use: ['expose-loader?p2'] }
@@ -54,9 +58,9 @@ module.exports = {
   },
   resolve: {
     alias: {
-      'phaser': phaser,
-      'pixi': pixi,
-      'p2': p2
+      phaser: phaser,
+      pixi: pixi,
+      p2: p2
     }
   }
 }
