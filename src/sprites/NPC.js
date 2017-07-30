@@ -4,13 +4,12 @@ export default class extends Phaser.Sprite {
   constructor ({ game, x, y, asset }) {
     super(game, x, y, asset)
     this.anchor.setTo(0.5, 1.0)
-    this.dialogTree = 0 //TODO
+    this.dialogTree = 0 // TODO
   }
 
-  interact() {
+  interact () {
     // Talk
   }
 
-  update () {
-  }
+  update () {}
 }

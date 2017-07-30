@@ -9,7 +9,7 @@ export default class extends Phaser.Sprite {
     this.speed = 3
   }
 
-  interact() {
+  interact () {
     // Talk
   }
 
@@ -22,7 +22,7 @@ export default class extends Phaser.Sprite {
     if (space) {
       this.interact()
     }
-    
+
     console.log(bounds)
     if (left && !right && this.x > 64) {
       this.x -= this.speed
