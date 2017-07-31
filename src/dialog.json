@@ -1,37 +1,39 @@
 {
-	"Caldwell": [
+  "Caldwell": [
     {
       "id": 0,
       "line": [
-        "Halt! Who goes th...",
-        "Hiro?",
+        "Halt! Who goes there?",
+        "Corbyn?",
         "Is that you?"
       ],
       "responses": [
         {
-          "quip": "Caldwell! It's been some time! I hope the guard life has been treating you well.!",
+          "quip": "Caldwell! It's been a while! I hope the guard life has been treating you well.",
           "target": 1
         },
         {
-          "quip": "It is me! It's nice to see you again Caldwell. How have you been?",
+          "quip": "It is! It's nice to see you again, Caldwell. How have you been?",
           "target": 2
         },
         {
-          "quip": "Hello Caldwell, it's nice to see you. Do you know where Amelia is?",
+          "quip": "Caldwell, I don't have much time. Do you know where my mother is?",
           "target": 3
         }
       ]
     },
     {
       "id": 1,
-      "line": ["There was a time when it was quite frightening for us. But we're a strong group, we got through."],
+      "line": [
+        "There was a time when it was quite frightening for us. But we're a tough bunch, we got through."
+      ],
       "responses": [
         {
-          "quip": "Strong? Ha! Stubborn more like.",
+          "quip": "Tough? Ha! Stubborn, more like.",
           "target": 4
         },
         {
-          "quip": "You guys are the real heroes. You could've fought the evil without me.",
+          "quip": "You guys are the real heroes. You could've fought those evil monsters without me.",
           "target": 5
         }
       ]
@@ -48,14 +50,16 @@
           "target": 6
         },
         {
-          "quip": "I suppose so, but it was not without hardships. Speaking of which, do you know where Amelia is?",
+          "quip": "I suppose so, but it was not without hardships. Speaking of which, do you know where my mother is?",
           "target": 3
         }
       ]
     },
     {
       "id": 3,
-      "line": ["Your mother? She doesn't leave home very often nowadays, I bet she's there now. Is everything alright?"],
+      "line": [
+        "Your mother? She doesn't leave home very often nowadays, I bet she's there now. Is everything alright?"
+      ],
       "responses": [
         {
           "quip": "Of course, I just want to see her most of all.",
@@ -71,7 +75,7 @@
       "id": 4,
       "line": [
         "Well that might be true, but we're still kicking reguardless.",
-        "I assume you are looking to see your your mother?"
+        "I assume you are looking to see your mother?"
       ],
       "responses": [
         {
@@ -96,13 +100,13 @@
     {
       "id": 6,
       "line": [
-        "That's very humble of you. Now's the time for the hero to return home now though eh?",
-        "I assume you are going to see Amelia?"
+        "That's very humble of you. Now's the time for the hero to return home now though, eh?",
+        "I assume you are going to see your mother?"
       ],
       "responses": [
         {
-         "quip": "My mother will always be there. I want to talk to you, Caldwell.",
-         "target": 9
+          "quip": "My mother will always be there. I want to talk to you, Caldwell.",
+          "target": 9
         },
         {
           "quip": "I would like that very much.",
@@ -112,7 +116,9 @@
     },
     {
       "id": 7,
-      "line": ["Ah, that would make sense. I'll let you get to that then. It's nice to see you home."],
+      "line": [
+        "Ah, that would make sense. I'll let you get to that then. It's nice to see you home."
+      ],
       "responses": [
         {
           "quip": "It's nice to see you too, Caldwell. Goodbye.",
@@ -122,21 +128,26 @@
     },
     {
       "id": 8,
-      "line": ["She doesn't leave home too often nowadays. I bet she's there now."],
+      "line": [
+        "She doesn't leave home too often nowadays. I bet she's there now."
+      ],
       "responses": [
         {
           "quip": "Thanks Caldwell, I'll talk with you later.",
           "target": -1
         },
         {
-          "quip": "Goodbye Caldwell.",
+          "quip": "Goodbye, Caldwell.",
           "target": -1
         }
       ]
     },
     {
       "id": 9,
-      "line": ["That's very kind of you but I should probably get back to work. Besides, I know the other townsfolk would be thrilled to talk with you as well. We can talk some more later."],
+      "line": [
+        "That's very kind of you but I should probably get back to work.",
+        "Besides, I know the other townsfolk would be thrilled to talk with you as well. We can talk some more later."
+      ],
       "responses": [
         {
           "quip": "I'll hold you to that. Goodbye, Caldwell.",
@@ -146,7 +157,9 @@
     },
     {
       "id": 10,
-      "line": ["Ah, you should find her at home then. It's nice to see you well Hiro."],
+      "line": [
+        "Ah, you should find her at home then. It's nice to see you well, Corbyn."
+      ],
       "responses": [
         {
           "quip": "Thanks for your help. Nice seeing you too.",
