@@ -52,7 +52,7 @@ export default class extends Phaser.Sprite {
       this.setPlayerText([])
       setTimeout(() => {
         this.display(value, index + 1)
-      }, 1700)
+      }, 2500)
     } else {
       this.setOtherText(value.line[index - 1])
       this.setPlayerText(value.choices)
