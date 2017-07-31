@@ -47,6 +47,7 @@ export default class extends Phaser.State {
     this.load.image('npc1', 'assets/images/caldwell.png')
     this.load.image('lily', 'assets/images/lily.png')
     this.load.image('finn', 'assets/images/finn.png')
+    this.load.image('seymour', 'assets/images/seymour.png')
     this.load.image('amelia', 'assets/images/amelia.png')
     this.load.image('ground', 'assets/images/ground.png')
     this.load.image('shroud', 'assets/images/shroud.png')

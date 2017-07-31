@@ -10,7 +10,7 @@ export default class extends Phaser.State {
 
   create () {
     // Stage boundaries
-    this.game.gameWidth = 2000
+    this.game.gameWidth = 3600
     this.game.world.setBounds(0, 0, this.game.gameWidth, 800)
 
     this.game.paused = false
@@ -32,7 +32,7 @@ export default class extends Phaser.State {
       }),
       new NPC({
         game: this.game,
-        x: 1000,
+        x: 1200,
         y: 500,
         asset: 'finn',
         name: 'Caldwell',
@@ -40,7 +40,7 @@ export default class extends Phaser.State {
       }),
       new NPC({
         game: this.game,
-        x: 1400,
+        x: 1900,
         y: 500,
         asset: 'lily',
         name: 'Caldwell',
@@ -48,7 +48,15 @@ export default class extends Phaser.State {
       }),
       new NPC({
         game: this.game,
-        x: 1800,
+        x: 2600,
+        y: 500,
+        asset: 'seymour',
+        name: 'Caldwell',
+        mandatory: false
+      }),
+      new NPC({
+        game: this.game,
+        x: 3300,
         y: 500,
         asset: 'amelia',
         name: 'Caldwell',

@@ -53,7 +53,7 @@ export default class extends Phaser.Sprite {
     }
     this.game.camera.x = this.x - 400
     this.game.convo.x = this.game.camera.x
-    this.game.sky.x = this.game.camera.x * 0.95
+    this.game.sky.x = this.game.camera.x * 0.92
 
     // Check NPCS
     this.nextTo = false
