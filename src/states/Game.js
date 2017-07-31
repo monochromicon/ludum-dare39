@@ -36,8 +36,8 @@ export default class extends Phaser.State {
         x: 1200,
         y: 500,
         asset: 'finn',
-        name: 'Caldwell',
-        mandatory: false
+        name: 'Finn',
+        mandatory: true
       }),
       new NPC({
         game: this.game,
