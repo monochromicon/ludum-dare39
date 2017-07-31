@@ -52,6 +52,7 @@ export default class extends Phaser.State {
     this.load.image('shroud', 'assets/images/shroud.png')
     this.load.image('orb', 'assets/images/orb.png')
     this.load.image('orbfill', 'assets/images/orbfill.png')
+    this.load.image('orbflash', 'assets/images/orbflash.png')
     this.load.image('textbox', 'assets/images/textbox.png')
     this.load.image('exclamation', 'assets/images/exclamation.png')
     this.load.image('sky', 'assets/images/sky.png')

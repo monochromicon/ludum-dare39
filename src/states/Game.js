@@ -91,4 +91,8 @@ export default class extends Phaser.State {
     //   this.game.debug.spriteInfo(this.mushroom, 32, 32)
     // }
   }
+
+  // update () {
+  //   this.game.convo.update()
+  // }
 }

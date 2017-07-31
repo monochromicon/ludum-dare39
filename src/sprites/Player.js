@@ -25,7 +25,7 @@ export default class extends Phaser.Sprite {
   }
 
   fading (proportion) {
-    this.alpha = 0.4 + proportion / 2
+    this.alpha = 0.6 + proportion * 0.4
   }
 
   update () {

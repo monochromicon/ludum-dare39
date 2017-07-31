@@ -21,7 +21,7 @@ export default class extends Phaser.Sprite {
     this.visible = false
     this.currentTimer = null
     this.nextIndex = -1
-    this.value = null
+    this.currValue = null
     var space = game.input.keyboard.addKey(Phaser.Keyboard.SPACEBAR)
     space.onDown.add(this.skipDialog, this)
   }
@@ -59,7 +59,7 @@ export default class extends Phaser.Sprite {
         this.display(value, index + 1)
       }, 2500)
       this.nextIndex = index + 1
-      this.value = value
+      this.currValue = value
     } else {
       this.setOtherText(value.line[index - 1])
       this.setPlayerText(value.choices)
@@ -108,10 +108,14 @@ export default class extends Phaser.Sprite {
 
   skipDialog () {
     if (this.currentTimer) {
-      console.log('did it!')
       clearTimeout(this.currentTimer)
       this.currentTimer = null
-      this.display(this.value, this.nextIndex)
+      this.display(this.currValue, this.nextIndex)
     }
+  }
+
+  update () {
+    // console.log('dialog got updated')
+    // this.orb.update()
   }
 }
