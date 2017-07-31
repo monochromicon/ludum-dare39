@@ -2,11 +2,7 @@
   "Caldwell": [
     {
       "id": 0,
-      "line": [
-        "Halt! Who goes there?",
-        "Corbyn?",
-        "Is that you?"
-      ],
+      "line": [ "Halt! Who goes there?", "Corbyn?", "Is that you?" ],
       "responses": [
         {
           "quip": "Caldwell! It's been a while! I hope the guard life has been treating you well.",
@@ -163,6 +159,288 @@
       "responses": [
         {
           "quip": "Thanks for your help. Nice seeing you too.",
+          "target": -1
+        }
+      ]
+    }
+  ],
+  "Finn": [
+    {
+      "id": 0,
+      "line": [ "HIRO! YOU'RE BACK!" ],
+      "responses": [
+        {
+          "quip": "Finn! It's nice to see you man.",
+          "target": 1
+        },
+        {
+          "quip": "Hey Finn, excitable as always I see.",
+          "target": 2
+        },
+        {
+          "quip": "It's nice to see you, Finn, but I need to go.",
+          "target": 3
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "line": [
+        "You know it! How you been, man? Tell me about your adventures, oh Great Hiro; tamer of beasts, slayer of dragons, controller of..."
+      ],
+      "responses": [
+        {
+          "quip": "Okay, okay, I get it. Sure, I've got a story I could tell you.",
+          "target": 4
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "line": [
+        "How could I not be when I've heard that my best friend is back from savin' the world?"
+      ],
+      "responses": [
+        {
+          "quip": "You are too kind, Finn.",
+          "target": 5
+        },
+        {
+          "quip": "You could have done it, Finn. I'm not special.",
+          "target": 6
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "line": [ "Where you headed my man? I could go with you." ],
+      "responses": [
+        {
+          "quip": "Thank you, Finn, but that won't be necessary. I'm going to see my mother.",
+          "target": 7
+        },
+        {
+          "quip": "No, Finn. Good bye.",
+          "target": -1
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "line": [
+        "I am always down for a story, but I don't really have time for a long one. You got the short and sweet kind too?"
+      ],
+      "responses": [
+        {
+          "quip": "Sure man. Is Slider still around? I haven't seen that old mutt yet.",
+          "target": 8
+        },
+        {
+          "quip": "Maybe we should just save the tales for later, I imagine you're skipping out on work right now?",
+          "target": 9
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "line": [
+        "Says the man who literally saved us from becoming some gross demon slaves or something."
+      ],
+      "responses": [
+        {
+          "quip": "What are you even talking about?",
+          "target": 10
+        },
+        {
+          "quip": "You're being weird again, Finn.",
+          "target": 11
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "line": [
+        "Yeah, sure. Whatever you say, mister Humble Hiro. Anyways, you have anything you want to do now that you're back in town?"
+      ],
+      "responses": [
+        {
+          "quip": "Not much, just checking in with everybody as I go.",
+          "target": 12
+        },
+        {
+          "quip": "Yes, I'm on my way to see my mom.",
+          "target": 13
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "line": [ "Oh, alright. I suppose we'll talk later then?" ],
+      "responses": [
+        {
+          "quip": "Of course, Finn. See you later.",
+          "target": -1
+        },
+        {
+          "quip": "Maybe. Good bye, Finn.",
+          "target": -1
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "line": [ "Of course he is. That dog's never goin' to heaven, man." ],
+      "responses": [
+        {
+          "quip": "Wonderful. Well, I didn't have the time to tell anyone, but when I stopped in town to gear up, I saw Slider outside the walls.",
+          "target": 14
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "line": [
+        "Who, me? Finn the, uhh...",
+        "Faithful?",
+        "I should get back to work. I'm already planning your welcome party now, man. You best not pee yourself when we surprise you like you did last time!"
+      ],
+      "responses": [
+        {
+          "quip": "What are you talking about...? Oh, he's already gone.",
+          "target": -1
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "line": [ "Who knows what would have happened. Seriously, man. Thanks." ],
+      "responses": [
+        {
+          "quip": "What's this? Finn acting serious? What have I done?",
+          "target": 15
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "line": [
+        "It's my specialty, friendo. You got anything you want to do first since you're back?"
+      ],
+      "responses": [
+        {
+          "quip": "Not really, just visiting with everyone again.",
+          "target": 16
+        },
+        {
+          "quip": "I'm on my way to see my mother again. It's been too long.",
+          "target": 17
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "line": [
+        "Well, I'm glad I spotted you, then. I gotta get back to work, but I'll talk to you later, yeah?"
+      ],
+      "responses": [
+        {
+          "quip": "Of course, man. Talk to you later.",
+          "target": -1
+        },
+        {
+          "quip": "Maybe later, Finn. Good bye.",
+          "target": -1
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "line": [
+        "Ah, she's so sweet, man. Whenever I go to visit her, I swear I can't leave without getting a pie or an armful of cookies."
+      ],
+      "responses": [
+        {
+          "quip": "Sounds like her. Talk to you later, man.",
+          "target": -1
+        },
+        {
+          "quip": "I do miss her cooking more than anything. Good bye, Finn.",
+          "target": -1
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "line": [ "What?! He's crazy, man. How does he even get out?" ],
+      "responses": [
+        {
+          "quip": "Right? Well, I went to go get him, and he started howling up a storm. I swear he was singing a song.",
+          "target": 18
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "line": [ "Oh, shut up. Don't you have somewhere to be?" ],
+      "responses": [
+        {
+          "quip": "Yeah, man, I'm going to see my mom. I'll talk to you later.",
+          "target": -1
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "line": [
+        "I'm glad I saw you, then. I gotta get back to work now, talk to you later."
+      ],
+      "responses": [
+        {
+          "quip": "Yeah, see you later.",
+          "target": -1
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "line": [
+        "Ah, I would be myself if I were you. I'll talk to you later, man."
+      ],
+      "responses": [
+        {
+          "quip": "Yeah, see you.",
+          "target": -1
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "line": [ "Pshh. Sure he was." ],
+      "responses": [
+        {
+          "quip": "I'm telling you, he was! It was a pretty nice tune, too.",
+          "target": 19
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "line": [
+        "Great. I wanted to hear about you running through an orc camp leaving no heads left on shoulders, and instead I get a tall tale about a dumb dog I see every goddamn day."
+      ],
+      "responses": [
+        {
+          "quip": "Hey, you asked for a story, man. Anyways, you need to get back to work. I'm sure you're skipping out on work, and I need to see my mom.",
+          "target": 20
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "line": [ "I would never skip out on work. Ha ha.", "Ha...", "Bye." ],
+      "responses": [
+        {
+          "quip": "Bye, Finn.",
           "target": -1
         }
       ]
