@@ -19,6 +19,11 @@ export default class extends Phaser.Sprite {
     this.dialogTree = null
     this.currNode = null
     this.visible = false
+    this.currentTimer = null
+    this.nextIndex = -1
+    this.value = null
+    var space = game.input.keyboard.addKey(Phaser.Keyboard.SPACEBAR)
+    space.onDown.add(this.skipDialog, this)
   }
 
   startConvo (name) {
@@ -50,9 +55,11 @@ export default class extends Phaser.Sprite {
     if (index < value.line.length) {
       this.setOtherText(value.line[index])
       this.setPlayerText([])
-      setTimeout(() => {
+      this.currentTimer = setTimeout(() => {
         this.display(value, index + 1)
       }, 2500)
+      this.nextIndex = index + 1
+      this.value = value
     } else {
       this.setOtherText(value.line[index - 1])
       this.setPlayerText(value.choices)
@@ -99,5 +106,12 @@ export default class extends Phaser.Sprite {
     this.addChild(this.otherBox)
   }
 
-  update () {}
+  skipDialog () {
+    if (this.currentTimer) {
+      console.log('did it!')
+      clearTimeout(this.currentTimer)
+      this.currentTimer = null
+      this.display(this.value, this.nextIndex)
+    }
+  }
 }

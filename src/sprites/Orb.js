@@ -26,6 +26,7 @@ export default class extends Phaser.Sprite {
         },
         true
       )
+      this.game.player.fading(proportionleft)
       return true
     }
   }

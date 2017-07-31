@@ -24,6 +24,10 @@ export default class extends Phaser.Sprite {
     this.game.convo.startConvo(npc.name)
   }
 
+  fading (proportion) {
+    this.alpha = 0.4 + proportion / 2
+  }
+
   update () {
     var left = this.game.input.keyboard.isDown(Phaser.KeyCode.LEFT)
     var right = this.game.input.keyboard.isDown(Phaser.KeyCode.RIGHT)
