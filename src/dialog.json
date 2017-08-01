@@ -1119,5 +1119,778 @@
         }
       ]
     }
+  ],
+  "Lily": [
+    {
+      "id": 0,
+      "line": [
+        "Corbyn Corbyn Corbyn!"
+      ],
+      "responses": [
+        {
+          "quip": "Lily Lily Lily!",
+          "target": 1
+        },
+        {
+          "quip": "Hi Lily!",
+          "target": 19
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "line": [
+        "Corbyn Corbyn Corbyn!"
+      ],
+      "responses": [
+        {
+          "quip": "Lily Lily Lily?",
+          "target": 2
+        },
+        {
+          "quip": "Hey there kid. You've...",
+          "target": 18
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "line": [
+        "Corbyn Corbyn Corbyn!"
+      ],
+      "responses": [
+        {
+          "quip": "Lily please.",
+          "target": 3
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "line": [
+        "Please what?"
+      ],
+      "responses": [
+        {
+          "quip": "Please stop saying my name over and over again.",
+          "target": 4
+        },
+        {
+          "quip": "Please calm down",
+          "target": 6
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "line": [
+        "Corbyn Corbyn Corbyn!"
+      ],
+      "responses": [
+        {
+          "quip": "Alright alright alright. What do you want?",
+          "target": 5
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "line": [
+        "Pie!"
+      ],
+      "responses": [
+        {
+          "quip": "Alright, head to Pierre's and tell him you can have a slice on my tab.",
+          "target": 29
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "line": [
+        "Why?"
+      ],
+      "responses": [
+        {
+          "quip": "Because I want to talk to you.",
+          "target": 7
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "line": [
+        "Why?"
+      ],
+      "responses": [
+        {
+          "quip": "Because I like talking to you?",
+          "target": 8
+        },
+        {
+          "quip": "Why?",
+          "target": 15
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "line": [
+        "Why?"
+      ],
+      "responses": [
+        {
+          "quip": "Because you're so energetic!",
+          "target": 9
+        },
+        {
+          "quip": "You're testing my patience Lily.",
+          "target": 14
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "line": [
+        "Why?"
+      ],
+      "responses": [
+        {
+          "quip": "Because you're a kid",
+          "target": 10
+        },
+        {
+          "quip": "I'm done with this, Lily.",
+          "target": 13
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "line": [
+        "I'm not a kid!",
+        "I'm a BIG KID!"
+      ],
+      "responses": [
+        {
+          "quip": "A big kid huh? I guess we'll have to celebrate then.",
+          "target": 11
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "line": [
+        "With pie?"
+      ],
+      "responses": [
+        {
+          "quip": "Of course Lily. Go tell Pierre that the next slice is on my tab.",
+          "target": 12
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "line": [
+        "Yay! Thank you Corbyn!"
+      ],
+      "responses": [
+        {
+          "quip": "Yeah yeah. Bye bye Lily.",
+          "target": -1
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "line": [
+        "Why?"
+      ],
+      "responses": [
+        {
+          "quip": "Ugh.",
+          "target": -1
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "line": [
+        "Why?"
+      ],
+      "responses": [
+        {
+          "quip": "Ugh.",
+          "target": -1
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "line": [
+        "Why?"
+      ],
+      "responses": [
+        {
+          "quip": "Why?",
+          "target": 15
+        },
+        {
+          "quip": "I don't know anymore Lily I'm going to leave now okay?",
+          "target": 16
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "line": [
+        "Why?"
+      ],
+      "responses": [
+        {
+          "quip": "So I can see my mom.",
+          "target": 17
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "line": [
+        "Why?"
+      ],
+      "responses": [
+        {
+          "quip": "Ugh.",
+          "target": -1
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "line": [
+        "I'm not a kid anymore!"
+      ],
+      "responses": [
+        {
+          "quip": "Alrigt then. What are you now?",
+          "target": 10
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "line": [
+        "Mom said you weren;t ever coming back, but you are back!"
+      ],
+      "responses": [
+        {
+          "quip": "Did you believe in me Lily?",
+          "target": 20
+        },
+        {
+          "quip": "Well that's a little mean.",
+          "target": 31
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "line": [
+        "Of course Corbyn!"
+      ],
+      "responses": [
+        {
+          "quip": "Well that's what made me capable enough to come back.",
+          "target": 21
+        },
+        {
+          "quip": "You are too sweet Lily",
+          "target": 27
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "line": [
+        "No Corbyn, you are just plain strong."
+      ],
+      "responses": [
+        {
+          "quip": "Well thank you Lily. Say, where is your mother?",
+          "target": 22
+        },
+        {
+          "quip": "Thanks I guess.",
+          "target": 26
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "line": [
+        "She's right over there. She said I could come say hi to you."
+      ],
+      "responses": [
+        {
+          "quip": "Well that was nice of her.",
+          "target": 23
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "line": [
+        "Mom is super nice. She said I might even get to go to Pierre's if I'm good today."
+      ],
+      "responses": [
+        {
+          "quip": "I see. Have you been nice to her today?",
+          "target": 24
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "line": [
+        "I'm always nice to mom Corbyn!"
+      ],
+      "responses": [
+        {
+          "quip": "Well, I'll go tell her that you were nice enough for a slice of pie today.",
+          "target": 25
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "line": [
+        "You're the best Corbyn!"
+      ],
+      "responses": [
+        {
+          "quip": "You're the best Lily. Bye bye for now.",
+          "target": -1
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "line": [
+        "I'm going to go back to mom now. Bye Corbyn!"
+      ],
+      "responses": [
+        {
+          "quip": "Bye bye Lily!",
+          "target": -1
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "line": [
+        "I am sweet. You should tell mom that I've been sweet."
+      ],
+      "responses": [
+        {
+          "quip": "For bluberry pie right?",
+          "target": 28
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "line": [
+        "Maaaybe"
+      ],
+      "responses": [
+        {
+          "quip": "I'll tell her that the next trip to Pierre's bakery is on me",
+          "target": 29
+        },
+        {
+          "quip": "I'll tell her later. You should head back for now though.",
+          "target": 30
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "line": [
+        "You're the best Corbyn!"
+      ],
+      "responses": [
+        {
+          "quip": "You're the best Lily! Bye bye!",
+          "target": -1
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "line": [
+        "Thank you Corbyn!"
+      ],
+      "responses": [
+        {
+          "quip": "Of course Lily. Bye bye.",
+          "target": -1
+        }
+      ]
+    },
+    {
+      "id": 31,
+      "line": [
+        "Mom is always mean to me. She never takes me to Pierre's."
+      ],
+      "responses": [
+        {
+          "quip": "She takes you to the bakery all the time!",
+          "target": 32
+        },
+        {
+          "quip": "Maybe it's because you just aren't nice enough to her.",
+          "target": 35
+        }
+      ]
+    },
+    {
+      "id": 32,
+      "line": [
+        "Only once a week!"
+      ],
+      "responses": [
+        {
+          "quip": "That's once a week that you get to have the best pie in the world. I would know.",
+          "target": 33
+        }
+      ]
+    },
+    {
+      "id": 33,
+      "line": [
+        "It is the best. Pierre is the best."
+      ],
+      "responses": [
+        {
+          "quip": "You are pretty cool yourself, but only when you are being nice to your mom.",
+          "target": 34
+        }
+      ]
+    },
+    {
+      "id": 34,
+      "line": [
+        "You're right. I'm going to be nice to mom so she gives me pie."
+      ],
+      "responses": [
+        {
+          "quip": "Tha't not what I meant...",
+          "target": -1
+        }
+      ]
+    },
+    {
+      "id": 35,
+      "line": [
+        "I should be nicer to mom"
+      ],
+      "responses": [
+        {
+          "quip": "Yes you should.",
+          "target": 36
+        },
+        {
+          "quip": "Duh",
+          "target": 36
+        }
+      ]
+    },
+    {
+      "id": 36,
+      "line": [
+        "...because then I get more pie!"
+      ],
+      "responses": [
+        {
+          "quip": "That's not what I meant...",
+          "target": 37
+        }
+      ]
+    },
+    {
+      "id": 37,
+      "line": [
+        "Bye Corbyn!"
+      ],
+      "responses": [
+        {
+          "quip": "*sigh* Bye Lily.",
+          "target": -1
+        }
+      ]
+    },
+    {
+      "id": 38,
+      "line": [
+        "You aren't strong Corbyn, you're just like everyone else!"
+      ],
+      "responses": [
+        {
+          "quip": "You are absolutely right Lily",
+          "target": 39
+        }
+      ]
+    },
+    {
+      "id": 39,
+      "line": [
+        "I'm always right."
+      ],
+      "responses": [
+        {
+          "quip": "Of course you are. Why don;t you head back to your mom for now?",
+          "target": 40
+        }
+      ]
+    },
+    {
+      "id": 40,
+      "line": [
+        "I guess I can. I'm happy you aren't dead Corbyn!"
+      ],
+      "responses": [
+        {
+          "quip": "Me too Lily. Bye!",
+          "target": -1
+        }
+      ]
+    },
+    {
+      "id": 41,
+      "line": [
+        "Corbyn!"
+      ],
+      "responses": [
+        {
+          "quip": "I'm sorry Lily, you've just grown so much. I could resist picking on you.",
+          "target": 42
+        },
+        {
+          "quip": "Sorry Lily I was just joking. I do have to go do adult things now though.",
+          "target": 55
+        }
+      ]
+    },
+    {
+      "id": 42,
+      "line": [
+        "You can just go back to fighting and not come back!"
+      ],
+      "responses": [
+        {
+          "quip": "Lily I just got back. I don't have time to be fighting anymore.",
+          "target": 43
+        },
+        {
+          "quip": "What if we went to the bakery and got some treats?",
+          "target": 51
+        }
+      ]
+    },
+    {
+      "id": 43,
+      "line": [
+        "I don't care."
+      ],
+      "responses": [
+        {
+          "quip": "Come on Lily, please?",
+          "target": 44
+        },
+        {
+          "quip": "Fine then. I'll just leave forever I guess.",
+          "target": 48
+        }
+      ]
+    },
+    {
+      "id": 44,
+      "line": [
+        "Only if we go to Pierre's."
+      ],
+      "responses": [
+        {
+          "quip": "Alright, we can go. You want a slice of blueberry pie I assume?",
+          "target": 45
+        },
+        {
+          "quip": "Lily, I don't have time to go to Pierre's.",
+          "target": 47
+        }
+      ]
+    },
+    {
+      "id": 45,
+      "line": [
+        "Duh Corbyn!"
+      ],
+      "responses": [
+        {
+          "quip": "Alright, go tell him that you can have a slive of pie on my tab.",
+          "target": 46
+        }
+      ]
+    },
+    {
+      "id": 46,
+      "line": [
+        "You're the best Corbyn!"
+      ],
+      "responses": [
+        {
+          "quip": "You're the best Lily.",
+          "target": -1
+        }
+      ]
+    },
+    {
+      "id": 47,
+      "line": [
+        "Fine then. Just.",
+        " Go."
+      ],
+      "responses": [
+        {
+          "quip": "Fine. Goodbye Lily.",
+          "target": -1
+        }
+      ]
+    },
+    {
+      "id": 48,
+      "line": [
+        "WAIT!",
+        "If you take me to Pierre's I guess I could forgive you."
+      ],
+      "responses": [
+        {
+          "quip": "It's all about the bakery isn't it. Do you even like me?",
+          "target": 49
+        },
+        {
+          "quip": "I don't have time for that Lily",
+          "target": 50
+        }
+      ]
+    },
+    {
+      "id": 49,
+      "line": [
+        "Of course Corbyn. As long as we get pie."
+      ],
+      "responses": [
+        {
+          "quip": "Of course of course. Go tell your mom that the next slice of pie is on me. Bye Lily.",
+          "target": -2
+        }
+      ]
+    },
+    {
+      "id": 50,
+      "line": [
+        "I'm not forgiving you then. I'm going to go get mom to give me some pie."
+      ],
+      "responses": [
+        {
+          "quip": "Good luck with that. Bye Lily.",
+          "target": -1
+        }
+      ]
+    },
+    {
+      "id": 51,
+      "line": [
+        "Blueberry pie! I want blueberry pie!"
+      ],
+      "responses": [
+        {
+          "quip": "Alright, blueberry pie it is. Go ahead and tell him that it's on my tab.",
+          "target": 52
+        },
+        {
+          "quip": "Don't you always get bluebery pie?",
+          "target": 53
+        }
+      ]
+    },
+    {
+      "id": 52,
+      "line": [
+        "You're the best, Corbyn!"
+      ],
+      "responses": [
+        {
+          "quip": "You're the best, Lily! Bye!",
+          "target": -1
+        }
+      ]
+    },
+    {
+      "id": 53,
+      "line": [
+        "That's because it's the best one Corbyn. Duh."
+      ],
+      "responses": [
+        {
+          "quip": "A;right, bluberry pie it is. Go tell him that it's on my tab.",
+          "target": 52
+        }
+      ]
+    },
+    {
+      "id": 54,
+      "line": [
+        "I can go with you. I'm a big kid now. That's what mom said."
+      ],
+      "responses": [
+        {
+          "quip": "I'm sorry dear. Not this time.",
+          "target": 55
+        },
+        {
+          "quip": "No Lily, not right now. I will play with you later alright?",
+          "target": 56
+        }
+      ]
+    },
+    {
+      "id": 55,
+      "line": [
+        "Please Corbyn?"
+      ],
+      "responses": [
+        {
+          "quip": "You mother is probably wondering where you are right now.",
+          "target": 56
+        },
+        {
+          "quip": "No Lily, not this time. I will play wiht you later.",
+          "target": 56
+        }
+      ]
+    },
+    {
+      "id": 56,
+      "line": [
+        "I'm telling mom you were mean to me!. MOOOM!"
+      ],
+      "responses": [
+        {
+          "quip": "*sigh* This'll be trouble later.",
+          "target": -1
+        }
+      ]
+    }
   ]
 }

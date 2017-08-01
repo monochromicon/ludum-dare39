@@ -43,10 +43,11 @@ export default class extends Phaser.Sprite {
       this.game.player.alpha = 0
       this.visible = false
       this.deathtext.destroy()
-      this.game.add.text(340, 130, 'The End', {
+      this.game.add.text(this.x + 340, 130, 'The End', {
         font: '24pt Arial',
         fill: '#000000'
       })
+
       this.game.state.getCurrentState().die()
       return
     }
@@ -73,6 +74,7 @@ export default class extends Phaser.Sprite {
           fill: '#ffffff'
         }
       )
+      this.addChild(this.deathtext)
       this.otherBox.destroy()
       this.setPlayerText([
         "I'm sorry, I have to go now. Take care, and live well.",
