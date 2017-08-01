@@ -44,24 +44,25 @@ export default class extends Phaser.State {
         x: 1900,
         y: 500,
         asset: 'lily',
-        name: 'Caldwell',
-        mandatory: false
+        name: 'Lily',
+        mandatory: false,
+        talked: true
       }),
       new NPC({
         game: this.game,
         x: 2600,
         y: 500,
         asset: 'seymour',
-        name: 'Caldwell',
-        mandatory: false
+        name: 'Seymour',
+        mandatory: true
       }),
       new NPC({
         game: this.game,
         x: 3300,
         y: 500,
         asset: 'amelia',
-        name: 'Caldwell',
-        mandatory: false
+        name: 'Amelia',
+        mandatory: true
       })
     ]
     for (let i = 0; i < this.game.npcs.length; i++) {
