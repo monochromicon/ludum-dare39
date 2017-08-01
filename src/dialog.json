@@ -445,5 +445,655 @@
         }
       ]
     }
+  ],
+  "Seymour": [
+    {
+      "id":0,
+      "line": [
+        "CORBYN!"
+        ],
+      "responses": [
+        {
+          "quip": "AHH!",
+          "target":1
+        },
+        {
+          "quip": "Ugh, not this again.",
+          "target":2
+        }
+      ]
+    },
+    {
+      "id":1,
+      "line": [
+        "Saved our town from unspeakable evil and still frightened by me?", "As it should be."
+        ],
+      "responses": [
+        {
+          "quip": "Somebody had to do it Seymour!",
+          "target":2
+        },
+        {
+          "quip": "Ugh, not this again.",
+          "target":31
+        }
+      ]
+    },
+    {
+      "id":2,
+      "line": [
+        "And you weren't ready!"
+      ],
+      "responses": [
+        {
+          "quip": "No. I wasn't.",
+          "target":4
+        },
+        {
+          "quip": "The hell I wasn't. It's dead isn't it?",
+          "target":3
+        }
+      ]
+    },
+    {
+      "id":4,
+      "line": [
+        "Something does seem off about you. Are you alright?"
+      ],
+      "responses": [
+        {
+          "quip": "Of course I am Seymour.",
+          "target":5
+        },
+        {
+          "quip": "Just exhausted from the journey and happy to be home.",
+          "target":20
+        },
+        {
+          "quip": "Not exactly. I'm off to see Amelia, is she home?",
+          "target":23
+        }
+      ]
+    },
+    {
+      "id":5,
+      "line": [
+        "I don't believe you, but if you want to hide it it's not my place to pry.","You will need to explain to Amelia however."
+      ],
+      "responses": [
+        {
+          "quip": "I will. Is she at home? I was on my way to her.",
+          "target":6
+        },
+        {
+          "quip": "You worry too much Seymour",
+          "target":8
+        }
+      ]
+    },
+    {
+      "id":6,
+      "line": [
+        "She is. Other than Finn and myself she hasn't been getting too much company either."
+      ],
+      "responses": [
+        {
+          "quip": "I want to see her, do you mind if I go?",
+          "target":7
+        }
+      ]
+    },
+    {
+      "id":7,
+      "line": [
+        "No. You should go. Goodbye Corbyn."
+      ],
+      "responses": [
+        {
+          "quip": "Goodbye",
+          "target":-1
+        }
+      ]
+    },
+    {
+      "id":8,
+      "line": [
+        "I find that all my years of life have led me to worry just the right amount."," You seem to worry too little"
+      ],
+      "responses": [
+        {
+          "quip": "Don't be so dramatic",
+          "target":9
+        },
+        {
+          "quip": "I don't have much to worry about right now.",
+          "target":14
+        }
+      ]
+    },
+    {
+      "id":9,
+      "line": [
+        "Me? Dramatic? Pff Says the hero sauntering back into town."
+      ],
+      "responses": [
+        {
+          "quip": "Would you rather I didn't come back?",
+          "target":10
+        },
+        {
+          "quip": "I could have died. Aren't you happy that I've returned?",
+          "target":11
+        }
+      ]
+    },
+    {
+      "id":10,
+      "line": [
+        "I would rather you hadn't left in the first place.","Just go see your mother. I'm done talking with you."
+      ],
+      "responses": [
+        {
+          "quip": "Fine. Goodbye Seymour.",
+          "target":-1
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "line": [
+        "Of course I'm happy, but you shouldn't have left in the first place.","You aren't the same."
+      ],
+      "responses": [
+        {
+          "quip": "What are you talking about? I'm fine.",
+          "target":12
+        },
+        {
+          "quip": "Yes, I have changed, but everything will be alright.",
+          "target":13
+        }
+      ]
+    },
+    {
+      "id":12,
+      "line": [
+        "No. The more I look, the more something seems wrong. You should go to Amelia now."
+        ],
+      "responses": [
+        {
+          "quip": "I was already on my way to see her. Goodbye Seymour.",
+          "target":-1
+        }
+      ]
+    },
+    {
+      "id":13,
+      "line": [
+        "I should hope so. Go to see Amelia. She's always been the most worried, of course."
+      ],
+      "responses":[
+        {
+          "quip": "Sounds like her. Goodbye Seymour",
+          "target":-1
+        }
+      ]
+    },
+    {
+      "id":14,
+      "line": [
+        "I can see that and it bothers me. You were never like this when you left."
+        ],
+      "responses": [
+        {
+          "quip": "Say Seymour, could you do me a favor?",
+          "target":15
+        },
+        {
+          "quip": "I should get going. Amelia is at home right?",
+          "target":19
+        }
+      ]
+    },
+    {
+      "id":15,
+      "line": [
+        "I'm not doing you any favors you don't deserve."
+      ],
+      "responses":[
+        {
+          "quip": "I wan't you to visit Amelia more often",
+          "target":16
+        },
+        {
+          "quip": "Oh don't worry about it then. I'm off to see Amelia now.",
+          "target":18
+        }
+      ]
+    },
+    {
+      "id":16,
+      "line": [
+        "That's a bit forboding don't you think? You are okay right?"
+        ],
+      "responses": [
+        {
+          "quip": "Of course. No need to worry as I said. I'm going to see her now. She's at home right?",
+          "target":17
+        }
+      ]
+    },
+    {
+      "id":17,
+      "line":[
+        "She is. Take care Corbyn."
+        ],
+      "responses":[
+        {
+          "quip": "You too Seymour.",
+          "target":-1
+        }
+      ]
+    },
+    {
+      "id":18,
+      "line": [
+        "Goodbye, then."
+        ],
+      "responses":[
+        {
+          "quip": "Goodbye",
+          "target":-1
+        },
+    {
+      "id":19,
+      "line":[
+        "Yes she is, and worried sick no doubt. She will be very happy to see you well."
+        ],
+      "responses":[
+        {
+          "quip": "I hope so. goodbye Seymour.",
+          "target":-1
+        }
+      ]
+    },
+    {
+      "id":20,
+      "line": [
+        "There seems to be more to that story."
+        ],
+      "responses":[
+        {
+          "quip": "There's really no lying to you is there?",
+          "target":21
+        },
+        {
+          "quip": "Nope, that's that.",
+          "target":22
+        }
+      ]
+    },
+    {
+      "id":21,
+      "line":[
+        "No, but it's clear you don't want to talk about it, so I won't pry."
+        ],
+      "responses":[
+        {
+          "quip": "Thanks Seymour. I'm going to head home now. Bye.",
+          "target":-1
+        }
+      ]
+    },
+    {
+      "id":22,
+      "line":[
+        "Yes I'm sure. I assume you are on your way to see Amelia. She's at home right now."
+        ],
+      "responses":[
+        {
+          "quip": "Thank you. I'll be on my way.",
+          "target":-1
+        }
+      ]
+    },
+    {
+      "id":23,
+      "line":[
+        "She is, and I'm sure she will be very happy to see you."
+        ],
+      "responses":[
+        {
+          "quip": "I hope so. Goodbye Seymour.",
+          "target":-1
+        }
+      ]
+    },
+    {
+      "id":24,
+      "line":[
+        "While that may be, you are no longer yourself.","Something that could have been prevented had you waited to grow up first."
+        ],
+      "responses":[
+        {
+          "quip": "I should have, but there was no time.",
+          "target":25
+        },
+        {
+          "quip": "You certainly didn't grow any more fun to talk to while I was away.",
+          "target":28
+        }
+      ]
+    },
+    {
+      "id":25,
+      "line":[
+        "You weren't a hero when you left, someone could have gone in your place!"
+        ],
+      "responses":[
+        {
+          "quip": "Sometimes I wish that someone else did.",
+          "target":26
+        },
+        {
+          "quip": "But I'm a hero now. People change Seymour",
+          "target":27
+        }
+      ]
+    },
+    {
+      "id":26,
+      "line":[
+        "Your mother too. You should go see her. She should be at home"
+        ],
+      "responses":[
+        {
+          "quip": "Bye Seymour",
+          "target":-1
+        }
+      ]
+    },
+    {
+      "id":27,
+      "line":[
+        "I don't think you've changed for the better."
+        ],
+      "responses":[
+        {
+          "quip": "Thanks. I'll be leaving now.",
+          "target":-1
+        }
+      ]
+    },
+    {
+      "id":28,
+      "line":[
+        "And you certainly haven't grown any more polite despite all my efforts when you were younger."
+        ],
+      "responses":[
+        {
+          "quip": "The adventuring roughed my edges I suppose",
+          "target":29
+        },
+        {
+          "quip": "Hey, if you don't use it you lose it.",
+          "target":30
+        }
+      ]
+    },
+    {
+      "id":29,
+      "line":[
+        "They certainly have. I hope you remember to be nice to your mother at least."
+        ],
+      "responses":[
+        {
+          "quip": "Of course I will Seymour. Thank you and goodbye.",
+          "target":-1
+        }
+      ]
+    },
+    {
+      "id":30,
+      "line":[
+        "And you certainly have lost it. I hope you can remember the basics for your mother at least."
+        ],
+      "responses":[
+        {
+          "quip": "Of course I will Seymour. Thank you and goodbye.",
+          "target":-1
+        }
+      ]
+    },
+    {
+      "id":31,
+      "line":[
+        "Don't give me that. I told you you weren't ready and you left anyways.","You deserve worse than a scolding from an old man"
+        ],
+      "responses":[
+        {
+          "quip": "Come on Seymour, I'm the Hero! Isn't there any room to spare here?",
+          "target":32
+        },
+        {
+          "quip": "I'm not going to waste what little time I have left being yelled at by you.",
+          "target":33
+        }
+      ]
+    },
+    {
+      "id":32,
+      "line":[
+        "You are still a child in my eyes.","You do seem different though, are you alright?"
+        ],
+      "responses":[
+        {
+          "quip": "Of course I am!",
+          "target":5
+        },
+        {
+          "quip": "Just exhausted from my journey and happy to be home is all.",
+          "target":20
+        },
+        {
+          "quip": "Not exactly. I would like to see Amelia. is she home right now?",
+          "target":23
+        }
+      ]
+    },
+    {
+      "id":33,
+      "line":[
+        "What do you mean by 'little time?'"
+        ],
+      "responses":[
+        {
+          "quip": "Goodbye Seymour",
+          "target":-1
+        }
+      ]
+    }
+  ],
+      "Amelia": [
+      {
+        "id": 0,
+        "line": [
+          "Corbyn"
+        ],
+        "responses": [
+          {
+            "quip": "Mother. Your Hero returns home",
+            "target": 1
+          }
+        ]
+      },
+      {
+      "id": 2,
+      "line": [
+        "I've missed you so much dear. I'll put on some coffee, tell me about your travels."
+      ],
+      "responses": [
+        {
+          "quip": "Sure mom. Anything you want.",
+          "target": 2
+        },
+        {
+          "quip": "Maybe another time mom",
+          "target": 3
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "line": [
+        "I've missed you so much dear. I'll put on some coffee, tell me about your travels."
+      ],
+      "responses": [
+        {
+          "quip": "Sure mom. Anything you want.",
+          "target": 3
+        },
+        {
+          "quip": "Maybe another time mom",
+          "target": 4
+        }
+      ]
+    },
+     {
+      "id": 3,
+      "line": [
+        "Everything I want just walked in the front door. What can I do for you honey?"
+      ],
+      "responses": [
+        {
+          "quip": "Just talk with me.",
+          "target": 4
+        }
+      ]
+    },
+         {
+      "id": 4,
+      "line": [
+        "What's wrong dear? You sound sad."
+      ],
+      "responses": [
+        {
+          "quip": "Nothing is wrong mom, I'm just happy to see you.",
+          "target": 5
+        },
+        {
+          "quip": "I'm not well",
+          "target": 5
+        }
+      ]
+    },
+      {
+      "id": 5,
+      "line": [
+        "I know something is wrong dear. No matter how much you change I will be able to tell."
+      ],
+      "responses": [
+        {
+          "quip": "I know mom.",
+          "target": 6
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "line": [
+        ["Well dear? What is it?","You know you can tell me anything."]
+      ],
+      "responses": [
+        {
+          "quip": "You know, when I left on my journey, I was so scared that I would never be able to come back.",
+          "target": 7
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "line": [
+        "Well you are home now. There is nothing to fear anymore."
+      ],
+      "responses": [
+        {
+          "quip": "As the days passed and I grew stronger. I left that fear behind thinking that nothing, not even dragons, could stop me.",
+          "target": 8
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "line": [
+        "And nothing did, right?"
+      ],
+      "responses": [
+        {
+          "quip": "When I fought the last evil, I reacted without fear of death.",
+          "target": 9
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "line": [
+        "Everything is alright. Right Corbyn?"
+      ],
+      "responses": [
+        {
+          "quip": "I had to use every lat bit of my power to defeat it...",
+          "target": 10
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "line": [
+        "Corbyn?"
+      ],
+      "responses": [
+        {
+          "quip": "... and I have none left now.",
+          "target": 11
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "line": [
+        "Everything is okay dear. We can fix it. Things will go back to the way they were."
+      ],
+      "responses": [
+        {
+          "quip": "When I left, I told you that I would come back and. Here I am at long last.",
+          "target": 12
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "line": [
+        "Corbyn I love you. Please don't leave again. This isn't fair!"
+      ],
+      "responses": [
+        {
+          "quip": "With just enough of me to sya one last thing.",
+          "target": 13
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "line": [
+        "Please..", "Corbyn.","A parent should never outlive there child."
+      ],
+      "responses": [
+        {
+          "quip": "Thank you for everything mom. Goodbye.",
+          "target": -1
+        }
+      ]
+    }
   ]
 }
