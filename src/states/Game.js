@@ -5,7 +5,9 @@ import Dialog from '../sprites/Dialog'
 // import Mushroom from '../sprites/Mushroom'
 
 export default class extends Phaser.State {
-  init () {}
+  init () {
+    console.log('hey')
+  }
   preload () {}
 
   create () {
@@ -20,7 +22,6 @@ export default class extends Phaser.State {
     for (let i = 0; i <= this.game.gameWidth + 256; i += 256) {
       this.game.add.sprite(i, 600 - 128, 'ground')
     }
-
     this.game.npcs = [
       new NPC({
         game: this.game,
@@ -35,8 +36,8 @@ export default class extends Phaser.State {
         x: 1200,
         y: 500,
         asset: 'finn',
-        name: 'Caldwell',
-        mandatory: false
+        name: 'Finn',
+        mandatory: true
       }),
       new NPC({
         game: this.game,
@@ -63,11 +64,11 @@ export default class extends Phaser.State {
         mandatory: false
       })
     ]
-
     for (let i = 0; i < this.game.npcs.length; i++) {
       this.game.add.existing(this.game.npcs[i])
     }
 
+    // player
     this.game.player = new Player({
       game: this.game,
       x: 100,
@@ -92,6 +93,15 @@ export default class extends Phaser.State {
       Phaser.KeyCode.LEFT,
       Phaser.KeyCode.RIGHT
     ])
+  }
+
+  die () {
+    console.log('Dead')
+    // this.game.camera.fade()
+    this.game.die()
+    // this.game.camera.onFadeComplete.add(() => {
+    //   this.state.start('End')
+    // }, this)
   }
 
   render () {

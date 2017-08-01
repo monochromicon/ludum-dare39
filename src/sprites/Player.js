@@ -29,9 +29,15 @@ export default class extends Phaser.Sprite {
   }
 
   update () {
-    var left = this.game.input.keyboard.isDown(Phaser.KeyCode.LEFT)
-    var right = this.game.input.keyboard.isDown(Phaser.KeyCode.RIGHT)
-    var space = this.game.input.keyboard.isDown(Phaser.KeyCode.SPACEBAR)
+    var left =
+      this.game.input.keyboard.isDown(Phaser.KeyCode.LEFT) ||
+      this.game.input.keyboard.isDown(Phaser.KeyCode.A)
+    var right =
+      this.game.input.keyboard.isDown(Phaser.KeyCode.RIGHT) ||
+      this.game.input.keyboard.isDown(Phaser.KeyCode.D)
+    var space =
+      this.game.input.keyboard.isDown(Phaser.KeyCode.SPACEBAR) ||
+      this.game.input.keyboard.isDown(Phaser.KeyCode.ENTER)
     var bounds = this.game.world.getBounds()
 
     // Abort if paused

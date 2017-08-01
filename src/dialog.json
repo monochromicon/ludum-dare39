@@ -2,7 +2,11 @@
   "Caldwell": [
     {
       "id": 0,
-      "line": [ "Halt! Who goes there?", "Corbyn?", "Is that you?" ],
+      "line": [
+        "Halt! Who goes there?",
+        "Corbyn?",
+        "Is that you?"
+      ],
       "responses": [
         {
           "quip": "Caldwell! It's been a while! I hope the guard life has been treating you well.",
@@ -167,7 +171,9 @@
   "Finn": [
     {
       "id": 0,
-      "line": [ "HIRO! YOU'RE BACK!" ],
+      "line": [
+        "CORBYN! YOU'RE BACK!"
+      ],
       "responses": [
         {
           "quip": "Finn! It's nice to see you man.",
@@ -186,7 +192,7 @@
     {
       "id": 1,
       "line": [
-        "You know it! How you been, man? Tell me about your adventures, oh Great Hiro; tamer of beasts, slayer of dragons, controller of..."
+        "You know it! How you been, man? Tell me about your adventures, oh Great Corbyn; tamer of beasts, slayer of dragons, controller of..."
       ],
       "responses": [
         {
@@ -213,7 +219,9 @@
     },
     {
       "id": 3,
-      "line": [ "Where you headed my man? I could go with you." ],
+      "line": [
+        "Where you headed my man? I could go with you."
+      ],
       "responses": [
         {
           "quip": "Thank you, Finn, but that won't be necessary. I'm going to see my mother.",
@@ -260,7 +268,7 @@
     {
       "id": 6,
       "line": [
-        "Yeah, sure. Whatever you say, mister Humble Hiro. Anyways, you have anything you want to do now that you're back in town?"
+        "Yeah, sure. Whatever you say, mister Humble Corbyn. Anyways, you have anything you want to do now that you're back in town?"
       ],
       "responses": [
         {
@@ -275,7 +283,9 @@
     },
     {
       "id": 7,
-      "line": [ "Oh, alright. I suppose we'll talk later then?" ],
+      "line": [
+        "Oh, alright. I suppose we'll talk later then?"
+      ],
       "responses": [
         {
           "quip": "Of course, Finn. See you later.",
@@ -289,7 +299,9 @@
     },
     {
       "id": 8,
-      "line": [ "Of course he is. That dog's never goin' to heaven, man." ],
+      "line": [
+        "Of course he is. That dog's never goin' to heaven, man."
+      ],
       "responses": [
         {
           "quip": "Wonderful. Well, I didn't have the time to tell anyone, but when I stopped in town to gear up, I saw Slider outside the walls.",
@@ -313,7 +325,9 @@
     },
     {
       "id": 10,
-      "line": [ "Who knows what would have happened. Seriously, man. Thanks." ],
+      "line": [
+        "Who knows what would have happened. Seriously, man. Thanks."
+      ],
       "responses": [
         {
           "quip": "What's this? Finn acting serious? What have I done?",
@@ -371,7 +385,9 @@
     },
     {
       "id": 14,
-      "line": [ "What?! He's crazy, man. How does he even get out?" ],
+      "line": [
+        "What?! He's crazy, man. How does he even get out?"
+      ],
       "responses": [
         {
           "quip": "Right? Well, I went to go get him, and he started howling up a storm. I swear he was singing a song.",
@@ -381,7 +397,9 @@
     },
     {
       "id": 15,
-      "line": [ "Oh, shut up. Don't you have somewhere to be?" ],
+      "line": [
+        "Oh, shut up. Don't you have somewhere to be?"
+      ],
       "responses": [
         {
           "quip": "Yeah, man, I'm going to see my mom. I'll talk to you later.",
@@ -415,7 +433,9 @@
     },
     {
       "id": 18,
-      "line": [ "Pshh. Sure he was." ],
+      "line": [
+        "Pshh. Sure he was."
+      ],
       "responses": [
         {
           "quip": "I'm telling you, he was! It was a pretty nice tune, too.",
@@ -437,7 +457,11 @@
     },
     {
       "id": 20,
-      "line": [ "I would never skip out on work. Ha ha.", "Ha...", "Bye." ],
+      "line": [
+        "I would never skip out on work. Ha ha.",
+        "Ha...",
+        "Bye."
+      ],
       "responses": [
         {
           "quip": "Bye, Finn.",

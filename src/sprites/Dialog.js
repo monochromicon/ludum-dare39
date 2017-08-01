@@ -6,6 +6,7 @@ import { dialogue } from '../utils'
 export default class extends Phaser.Sprite {
   constructor ({ game, x, y }) {
     super(game, x, y, 'shroud')
+    this.game = game
     this.textBoxes = []
     this.otherBox = null
     this.style = {
@@ -22,8 +23,11 @@ export default class extends Phaser.Sprite {
     this.currentTimer = null
     this.nextIndex = -1
     this.currValue = null
-    var space = game.input.keyboard.addKey(Phaser.Keyboard.SPACEBAR)
-    space.onDown.add(this.skipDialog, this)
+    this.dead = false
+    var key = game.input.keyboard.addKey(Phaser.Keyboard.SPACEBAR)
+    key.onDown.add(this.skipDialog, this)
+    key = this.game.input.keyboard.addKey(Phaser.KeyCode.ENTER)
+    key.onDown.add(this.skipDialog, this)
   }
 
   startConvo (name) {
@@ -34,6 +38,18 @@ export default class extends Phaser.Sprite {
   }
 
   respond (index) {
+    if (this.dead) {
+      // You are dead, phase two
+      this.game.player.alpha = 0
+      this.visible = false
+      this.deathtext.destroy()
+      this.game.add.text(340, 130, 'The End', {
+        font: '24pt Arial',
+        fill: '#000000'
+      })
+      this.game.state.getCurrentState().die()
+      return
+    }
     if (this.orb.drain(1)) {
       this.currNode = this.dialogTree.next(index)
       if (this.currNode.done) {
@@ -44,7 +60,25 @@ export default class extends Phaser.Sprite {
         this.display(this.currNode.value, 0)
       }
     } else {
-      // TODO: you are dead
+      // You are dead, phase one
+      this.dead = true
+      this.tint = 0x552222
+      this.game.player.alpha = 0.20
+      this.deathtext = this.game.add.text(
+        150,
+        520,
+        'Your time is up. Choose your last words.',
+        {
+          font: '24pt Arial',
+          fill: '#ffffff'
+        }
+      )
+      this.otherBox.destroy()
+      this.setPlayerText([
+        "I'm sorry, I have to go now. Take care, and live well.",
+        'Thank you for everything. Life was pretty good here.',
+        'Just remember me when you see the setting sun.'
+      ])
     }
   }
 
