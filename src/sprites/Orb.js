@@ -4,7 +4,7 @@ export default class extends Phaser.Sprite {
   constructor ({ game, x, y }) {
     super(game, x, y, 'orb')
     this.anchor.setTo(0.5, 1.0)
-    this.maxlevel = 21
+    this.maxlevel = 22
     this.level = this.maxlevel
 
     this.contents = game.add.sprite(0, 0, 'orbfill')
